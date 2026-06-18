@@ -86,7 +86,7 @@ try {
     $mail->Host       = 'smtp.hostinger.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@gracyud.in';
-    $mail->Password   = 'Gracy@2025';
+    $mail->Password   = 'Password';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 

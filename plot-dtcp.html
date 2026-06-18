@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Regularisation of Unapproved Plots | Gracy Urban Developers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Regularisation of unapproved plots under DTCP. Fast, legal, and professional plot approval support by Gracy Urban Developers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Gracy Urban Developers Logo" class="logo-img">
+      <div class="logo-text"><span>GRACY</span> URBAN DEVELOPERS<p class="cl">
+    Expert approvals. Faster Clearances.
+</p></div>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approvals.html" class="active">Approvals</a></li>
+        <li><a href="real-estate.html">Real Estate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+  <div class="wrapper">
+
+    <!-- TITLE -->
+    <section class="section">
+      <h1>Regularisation of Unapproved Plots<br>(DTCP – Corporation, Municipality, Town Panchayat)</h1>
+      <p class="mb-2">
+        We, <strong>GRACY URBAN DEVELOPERS</strong>, specialize in obtaining 
+        <strong>Regularisation Approvals for Unapproved Plots</strong> by ensuring complete compliance 
+        with Government rules and regulations.
+      </p>
+
+      <p class="mb-2">
+        We assist in securing approvals from:
+      </p>
+
+      <ul class="list">
+        <li>✔ DTCP (Directorate of Town & Country Planning)</li>
+        <li>✔ Corporation</li>
+        <li>✔ Municipal Council</li>
+        <li>✔ Town Panchayat</li>
+      </ul>
+
+      <p class="mb-2">
+        Every plot must be <strong>regularised and approved</strong> under the norms of DTCP or the 
+        respective Urban Local Body as per <strong>Government Order (G.O) No. 78</strong>.
+      </p>
+
+      <p>
+        We provide complete documentation support, submission, and follow-up until approval is obtained.
+      </p>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <h2>Contact Us for Plot Regularisation</h2>
+
+      <div class="grid">
+
+        <!-- FORM -->
+        <div class="card">
+          <h3>Request Approval Support</h3>
+          <p class="mb-2">Share your plot details and our team will contact you immediately.</p>
+
+          <form action="contact.php" method="POST">
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" required>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Plot Location</label>
+              <input id="location" name="location" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Plot Details</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <input type="hidden" name="service" value="Plot Regularisation (DTCP)">
+
+            <button type="submit" class="btn btn-primary">Request Plot Regularisation Help</button>
+
+          </form>
+        </div>
+
+        <!-- CONTACT INFORMATION -->
+        <div class="card">
+          <h3>Contact Details</h3>
+
+          <p><strong>Gracy Urban Developers</strong></p>
+          <p><strong>Mobile:</strong> <a href="tel:+917700998977">7700998977</a></p>
+          <p><strong>Email:</strong> 
+            <a href="mailto:gracyurbandevelopers@gmail.com">
+              gracyurbandevelopers@gmail.com
+            </a>
+          </p>
+          <p><strong>Website:</strong> 
+            <a href="https://www.gracyud.in" target="_blank" rel="noopener">
+              www.gracyud.in
+            </a>
+          </p>
+
+          <p><strong>Address:</strong><br>
+            360, T Melappatty, Thirumalairayapuram Post,<br>
+            Kulathur TK, Pudukkottai – 622504
+          </p>
+
+          <p><em>
+            We provide fast, legal, and professional support for all plot regularisation services.
+          </em></p>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <small>&copy; <span id="year"></span> Gracy Urban Developers.</small>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

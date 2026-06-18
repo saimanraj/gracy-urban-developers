@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Property | Gracy Urban Developers</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo">
+  <img src="img/logo.jpg" alt="Gracy Urban Developers Logo" class="logo-img">
+  <div class="logo-text"><span>GRACY</span> URBAN DEVELOPERS<p class="cl">
+    Expert approvals. Faster Clearances.
+</p></div>
+</div>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approvals.html">Approvals</a></li>
+        <li><a href="real-estate.html" class="active">Real Estate</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrapper">
+    <section class="section">
+      <h1>Buy Property</h1>
+      <p class="mb-2">
+        Tell us what kind of property you want to buy – land, plots, or flats – and we will shortlist options for you.
+      </p>
+    </section>
+    <section class="section">
+      <h2>Your Buying Requirement</h2>
+      <form action="contact.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+        <div class="form-group">
+          <label for="property_type">What do you want to buy?</label>
+          <select id="property_type" name="property_type" required>
+            <option value="">Select</option>
+            <option value="Land">Land</option>
+            <option value="Plot">Plot</option>
+            <option value="Flat">Flat</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Preferred Location / Area</label>
+          <input id="location" name="location" type="text">
+        </div>
+        <div class="form-group">
+          <label for="budget">Approximate Budget</label>
+          <input id="budget" name="budget" type="text">
+        </div>
+        <div class="form-group">
+          <label for="message">Any Additional Requirements</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <input type="hidden" name="service" value="Buy Property">
+        <button type="submit" class="btn btn-primary">Submit Buying Requirement</button>
+      </form>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <small>&copy; <span id="year"></span> Gracy Urban Developers.</small>
+    <div class="footer-social">
+      <a href="social-media.html">YouTube</a>
+      <a href="social-media.html">Instagram</a>
+      <a href="social-media.html">Facebook</a>
+      <a href="social-media.html">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
